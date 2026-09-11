@@ -111,8 +111,6 @@ const P = {
     '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>',
 }
 
-export const iconNames = Object.keys(P)
-
 export default function Icon({ name, className = 'h-5 w-5', title, ...rest }) {
   const inner = P[name] || P.fileText
   const spin = name === 'spinner' ? ' animate-spin' : ''
